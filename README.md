@@ -25,8 +25,11 @@ We use vanilla Javacript, mainly ES5 with some ES6 features.
 - Use `var` instead of `let` or `const`
 - Use `function` instead of `class`
 - Use `require` instead of `import`
-- Use short variable names
 - Use `for` instead of `forEach`
+- Use short variable names
+- Avoid single letter variable names except as counters in loops
+- Use camelCase for longer variables and function names
+- Use snake_case for variables from the database
 
 ```js
 // Deconstruct whenever possible
@@ -38,7 +41,10 @@ function(a = 1, b = 2) {}
 
 If we need types we use JSDOC.
 
-
 ### CSS
 
-We use SASS for CSS using SASS variables. We don't use CSS variables.
+We use SCSS for CSS using SASS variables. We don't use CSS variables.
+
+- Avoid deep nesting
+- Use `import` for splitting SCSS files
+- Use VCSS as reset
