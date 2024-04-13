@@ -1,8 +1,10 @@
-# Eldoy style guide
+# Eldøy Projects Style Guide
 
 Style guide for Eldøy Projects developers.
 
 ### Prettier settings
+
+We use prettier for code formatting.
 
 Add this to your editor config (VSCode):
 
@@ -33,6 +35,9 @@ var { db } = app.config
 // Add default variables to function parameters when possible
 function(a = 1, b = 2) {}
 ```
+
+If we need types we use JSDOC.
+
 
 ### CSS
 
