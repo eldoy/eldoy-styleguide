@@ -14,6 +14,16 @@ Add this to your editor config (VSCode):
 "prettier.trailingComma": "none"
 ```
 
+To make prettier auto-formatting work with VSCode, include `/* HTML */`:
+
+```js
+function component() {
+  return /* HTML */`
+    <p>Hello</p>
+  `
+}
+```
+
 ### Javascript
 
 We use vanilla Javacript, mainly ES5 with some ES6 features.
@@ -40,6 +50,39 @@ function(a = 1, b = 2) {}
 ```
 
 If we need types we use JSDOC.
+
+##### SSR and Browser Javascript
+
+We use [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) for HTML.
+
+There are 5 kinds of functions for front-end Javascript:
+
+1. Handle functions - handles events like submits and clicks
+2. Render functions - either returns HTML or renders HTML
+3. Load functions - fetch data or HTML from the server
+4. Init functions - set up data and prepare
+5. Util functions - helper functions that are not global
+
+Here are some examples:
+
+```js
+// Handle function
+function handleButtonClick(btn) {}
+
+// Render function
+function renderList() {
+  return `<ul><li>Hello</li></ul>`
+}
+
+// Load function
+function loadData() {}
+
+// Init function
+function initData() {}
+
+// Util function
+function utilFindProject() {}
+```
 
 ### CSS
 
