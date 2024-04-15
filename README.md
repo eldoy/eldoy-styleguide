@@ -96,7 +96,7 @@ function utilFindProject() {}
 
 Functionality that are often used will be candidates for inclusion into one of the following libaries:
 
-- [waveorb](https://github.com/eldoy/waveorb) - The Waveorb web development framework
+- [Waveorb](https://github.com/eldoy/waveorb) - The Waveorb web development framework
 - [furu](https://github.com/eldoy/furu) - The NodeJS web server library
 - [extras](https://github.com/eldoy/extras) - NodeJS utility functions and regexps
 - [HAKA](https://github.com/eldoy/haka) - DOM manipulation functions
