@@ -43,11 +43,13 @@ We use vanilla Javacript, mainly ES5 with some ES6 features.
 - Use `var` instead of `let` or `const`
 - Use `function` instead of `class`
 - Use `require` instead of `import`
+- Use the full file name with extension with require for local files: `require('/lib/file.js')
 - Use `for` instead of `forEach`
 - Use short variable names
 - Avoid single letter variable names except as counters in loops
 - Use camelCase for longer variables and function names
 - Use snake_case for variables from the database
+- Comments should start with capital letters: `// Comment` not `// comment`
 
 ```js
 // Deconstruct whenever possible
