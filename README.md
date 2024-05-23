@@ -94,6 +94,17 @@ function initData() {}
 function utilFindProject() {}
 ```
 
+#### Writing tests
+
+We usually use `spekk` for testing if we are doing test driven development. Any APIs, converters or complicated structures should have a test suite.
+
+```js
+// Use 'result' for tester variable name if possible
+var result = await matcher(value)
+```
+
+Write small test cases, prefer splitting into one file for each function. Move function up to libraries to lessen test burden.
+
 #### JS Utility libraries
 
 Functionality that are often used will be candidates for inclusion into one of the following libaries:
