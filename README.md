@@ -41,6 +41,7 @@ We use vanilla Javacript, mainly ES5 with some ES6 features.
 - Do not use trailing comma
 - Use `function() {}` instead of `() => {}`, except for built in JS array functions like `map` and `filter`
 - Use `var` instead of `let` or `const`
+- Use UPPERCASE for constants. These should never be reassigned.
 - Use `function` instead of `class`
 - Use `require` instead of `import`
 - Use the full file name with extension with require for local files: `require('/lib/file.js')
@@ -59,7 +60,7 @@ var { db } = app.config
 function(a = 1, b = 2) {}
 ```
 
-If we need types we use JSDOC.
+If we need types we use JSDoc or just Markdown files with response examples.
 
 #### SSR and Browser Javascript
 
@@ -104,6 +105,8 @@ var result = await matcher(value)
 ```
 
 Write small test cases, prefer splitting into one file for each function. Move function up to libraries to lessen test burden.
+
+Use `time` prefix for timestamp variables, like this: `timeInit`, `timeStart`, `timeEnd`
 
 #### JS Utility libraries
 
